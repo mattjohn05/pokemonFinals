@@ -1,0 +1,150 @@
+body {
+  font-family: 'Pokemon Solid', sans-serif;
+  font-size: 20px;
+  background-color: #00C5F0;
+  margin: 0;
+  padding: 0;
+}
+
+.game {
+  position: relative;
+  background-image: url('https://th.bing.com/th/id/OIP.sgsqD5f8k6OVeO_ZqjyrPQHaFS?rs=1&pid=ImgDetMain');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px solid black;
+  border-radius: 8px;
+  height: 480px;
+  width: 800px;
+  margin: 20px auto;
+}
+
+.opponent {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.opponent .stats {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: white;
+  padding: 12px;
+}
+
+.opponent .stats .pokeballs {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.opponent .stats .pokeballs .pokeball {
+  width: 25px;
+  height: 25px;
+  background-image: url('http://bit.ly/pokeballimg');
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.opponent .stats .hp-count:before {
+  content: 'HP: ';
+}
+
+.opponent .stats .name {
+  font-weight: bold;
+}
+
+.opponent .stats .level:before {
+  content: "LVL";
+}
+
+.opponent .pokemon {
+  width: 150px;
+  height: auto;
+}
+
+.player {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.player .stats {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 2px solid black;
+  border-radius: 8px;
+  color: white;
+  padding: 12px;
+}
+
+.player .stats .pokeballs {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.player .stats .pokeballs .pokeball {
+  width: 25px;
+  height: 25px;
+  background-image: url('http://bit.ly/pokeballimg');
+  background-size: contain;
+  margin-right: 5px;
+}
+
+.player .stats .hp-count:before {
+  content: 'HP: ';
+}
+
+.player .stats .name {
+  font-weight: bold;
+}
+
+.player .stats .level:before {
+  content: "LVL";
+}
+
+.player .pokemon {
+  width: 150px;
+  height: auto;
+}
+
+.box {
+  background-color: #333;
+  border: 3px solid black;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  width: 760px;
+}
+
+.box .message {
+  font-size: 24px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.actions button {
+  background-color: #666;
+  border: 3px solid #888;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  background-color: #777;
+  border-color: #999;
+}
+
+.actions button:active {
+  background-color: #555;
+  border-color: #666;
+}
